@@ -1,0 +1,12 @@
+registerDriver(): Registers the JDBC driver.
+createTbl(): Creates the stdRegistration table if it does not exist.
+insertData(int stdID, String stdName): Inserts a new record using PreparedStatement.
+readData(): Reads all records using Statement and ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY.
+readDataScrollSensitive(): Demonstrates the use of ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY to navigate the result set.
+updateData(int stdID, String newStdName): Updates a record using PreparedStatement.
+deleteData(int stdID): Deletes a record using PreparedStatement
+----------------------------------------------------------------------
+Types of ResultSet
+1)TYPE_FORWARD_ONLY: The default type, which allows the cursor to move only forward through the result set.
+2)TYPE_SCROLL_INSENSITIVE: Allows the cursor to move forward and backward, but the result set is not sensitive to changes made by others to the database that occur after the result set was created.
+3)TYPE_SCROLL_SENSITIVE: Allows the cursor to move forward and backward and is sensitive to changes made by others to the database that occur after the result set was created
